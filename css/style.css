@@ -285,10 +285,6 @@
     transition: all 2s;
 }
 
-.padding-left {
-    padding-left: 10rem;
-}
-
 @media (max-width: 768px) {
     .mess {
         height: 100px !important;
@@ -309,6 +305,6 @@
     }
 
     .padding-left {
-        display: none;
+        padding-left: 1rem;
     }
 }
