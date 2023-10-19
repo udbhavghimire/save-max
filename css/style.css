@@ -259,6 +259,14 @@
     transition: 0.3s;
 }
 
+.padding-left {
+    padding-left: 19rem;
+}
+
+.padding-top {
+    padding-top: 10rem;
+}
+
 
 /* Increase the size of Owl Carousel navigation buttons */
 
@@ -285,6 +293,20 @@
     transition: all 2s;
 }
 
+.fixed-title {
+    padding: 2em 0;
+    width: 100%;
+    position: sticky;
+    top: 6.5rem;
+}
+
+.blog-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
     .mess {
         height: 100px !important;
@@ -305,6 +327,10 @@
     }
 
     .padding-left {
-        padding-left: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .padding-top {
+        padding-top: 5rem;
     }
 }
