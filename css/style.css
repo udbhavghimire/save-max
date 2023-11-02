@@ -106,7 +106,7 @@
 }
 
 .call-btn:hover {
-    background-image: linear-gradient(106deg, #65654d, rgb(77, 77, 77));
+    background-image: linear-gradient(106deg, #b62727, rgb(10, 9, 115));
     color: white;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .agent-img {
-    height: 570px !important;
+    height: 530px !important;
     width: 100% !important;
     object-fit: cover !important;
     border-radius: 10px !important;
@@ -295,8 +295,8 @@
 /* Custom CSS for slide transition duration */
 
 .owl-carousel .owl-item {
-    -webkit-transition: all 2s;
-    transition: all 2s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
 }
 
 .fixed-title {
@@ -320,13 +320,101 @@
 
 .custom-offcanvas {
     width: 100%;
-    background-color: #eaeaea;
+    background-color: #eeecec;
     /* Set your desired width here, for example, 80% of the viewport width */
-    max-height: 100vh;
+    height: 100vh;
     /* Set your desired maximum height (e.g., 80% of the viewport height) */
     overflow-y: auto;
     /* Enable vertical scrolling if content overflows */
+    transition: transform 1s ease;
+}
+
+.mybot {
+    margin-bottom: 8px !important;
+}
+
+
+/* Remove blue background and card appearance */
+
+.accordion-item {
+    border: none;
+    border-bottom: 2px solid #c0bcbc;
+    transition: border-color 1s ease;
+    position: relative;
+}
+
+.accordion-item:hover {
+    border-bottom: 0.1px solid #000000;
+}
+
+.accordion-item button.accordion-button {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* Add border below the item when it's clicked */
+
+.accordion-item.active {
+    border-bottom: 2px solid #007bff;
+    /* You can change the color as needed */
+}
+
+
+/* Remove blue border when an item is clicked */
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* Create a wave-like hover animation */
+
+.accordion-item::before,
+.accordion-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgb(0, 0, 0);
     transition: transform 1.5s ease;
+}
+
+.accordion-item::before {
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.accordion-item::after {
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+/* .accordion-item:hover::before {
+    transform: scaleX(1);
+} */
+
+.accordion-item:hover::after {
+    transform: scaleX(1);
+}
+
+.fields {
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f1f3fa;
+}
+
+.contact-img {
+    height: 150px;
+}
+
+.sm-text {
+    font-size: call-btn;
 }
 
 @media (max-width: 768px) {
@@ -357,6 +445,6 @@
     }
     .about-heading {
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 }
